@@ -26,15 +26,6 @@
             align-items: center;
         }
 
-        .logo {
-            margin-bottom: 15px;
-        }
-
-        .logo img {
-            width: 150px;
-            height: auto;
-        }
-
         .profile img {
             width: 150px;
             height: 150px;
@@ -43,7 +34,13 @@
             border: 3px solid #CCD5AE;
         }
 
-        
+        /* NEW: title under profile */
+        .profile-title {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+
         #content {
             background: #38684E;
             max-width: 700px;
@@ -93,6 +90,17 @@
             margin-top: 20px;
         }
 
+        /* NEW: logo at bottom of card */
+        .bottom-logo {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .bottom-logo img {
+            width: 100px;
+            height: auto;
+        }
+
         ::selection {
             background: #CCD5AE;
             color: #38684E;
@@ -104,16 +112,18 @@
 
     <div class="container">
 
+        <!-- LEFT SIDE -->
         <div class="left-side">
-              <div class="profile">
+            <div class="profile">
                 <img src="bw-headshot.jpg" alt="Julia Weigle">
             </div>
-            
-            <div class="logo">
-                <img src="personallogo-lightgreen.png" alt="Logo">
+
+            <div class="profile-title">
+                Graphic Designer
             </div>
         </div>
 
+        <!-- CARD -->
         <div id="content">
 
             <h1>Julia Weigle</h1>
@@ -156,6 +166,11 @@
             <p>
                 UX/UI Design • Web Design • Branding • Photography 
             </p>
+
+            <!-- LOGO AT BOTTOM -->
+            <div class="bottom-logo">
+                <img src="personallogo-lightgreen.png" alt="Logo">
+            </div>
 
         </div>
 
